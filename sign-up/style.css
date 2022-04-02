@@ -1,0 +1,152 @@
+/* Reset */
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'DungGeunMo';
+}
+
+body {
+    background-color: #008081;
+    margin: 0;
+}
+
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+input {
+    font-family: 'DungGeunMo';
+}
+
+
+/* mobile */
+
+
+
+
+.header {
+    background-color: #c3c3c3;
+    border: 2px solid #808080;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: header 5s infinite alternate;
+}
+
+@keyframes header {
+    0% {
+        color: #000;
+    }
+    25% {
+        color: #18fa10;
+    }
+    50% {
+        color: #ffff00;
+    }
+    75% {
+        color: #0200fa;
+    }
+    100% {
+        color: #ff0403;
+    }
+}
+
+
+.header h1 {
+    font-size: 50px;
+}
+
+.header .pc {
+    display: none;
+}
+
+.join-page {
+    font-size: 20px;
+}
+
+.join-page form {
+    padding: 20px 0;
+    background-color: #c3c3c3;
+    border: 2px solid #808080;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-page section {
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+
+.id.section label,
+.password.section label,
+.name.section label {
+    display: inline-block;
+    width: 40px;
+}
+
+.gender.section p {
+    margin-top: 0;
+}
+
+.join-page section input {
+    background-color: #808080;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.join-page form input:hover {
+    border: 2px solid #0066ff;
+}
+
+.join-button {
+    padding: 10px 20px;
+}
+
+/* pc */
+
+@media screen and (min-width: 768px) {
+
+    .join-box {
+        width: 800px;
+        margin: 100px auto;
+    }
+
+    .header h1 {
+        font-size: 80px;
+    }
+
+    .header .mobile {
+        display: none;
+    }
+
+    .header .pc {
+        display: block;
+        font-size: 25px;
+    }
+
+    .join-page {
+        font-size: 30px;
+    }
+
+    .id.section label,
+    .password.section label,
+    .name.section label, 
+    .birth.section label {
+    width: 100px;
+    }
+
+    .join-button {
+        width: 320px;
+    }
+
+}
+    
