@@ -1,0 +1,111 @@
+body, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-size: inherit;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: url(images/background02.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    background-color: #ddd;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.header {
+    background-image: url(images/cover06.png);
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.header img.profile {
+    width: 200px;
+    border: 2px solid salmon;
+    border-radius: 54% 46% 33% 67% / 74% 43% 57% 26% ;
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+.header p {
+    border-top: 4px solid ;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+
+.section {
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.section.skills {
+    background-image: url(images/icon-skills.png);
+}
+
+.section h2 {
+    color: salmon;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.list li {
+    border-left: 5px solid #ddd;
+    padding: 2px 10px;
+}
+
+.list li:hover {
+    border-color: pink;
+    color: pink;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    color: white;
+    background-image: url(images/icons.png);
+    background-size: 144px 96px;
+    text-indent: -9999px; /* IR 기법 */
+    border-radius: 30px;
+    border: 2px solid #ddd;
+}
+
+.icon:hover {
+    border-color: orangered;
+    color: orangered;
+
+}
+

@@ -1,0 +1,76 @@
+body, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: inherit;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pumkinlist-header {
+    background-image: url(images/icon-open.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 480px;
+    padding: 30px;
+    color: #FF9900;
+    font-size: 25px;
+    animation: 1s infinite alternate wingky;
+}
+
+@keyframes wingky {
+    to {
+        background-image: url(images/icon-wingky.png);
+    }
+}
+
+.pumkinlist-header h1 {
+    color: #FF9900;
+    font-size: 25px;
+    padding-left: 10px;
+    border-left: 5px solid #FF9900;
+}
+
+.pumkinlist-desc {
+    background-color: beige;
+    padding: 10px 0;
+}
+
+.pumkinlist-desc .list li {
+    background-color: #fff;
+    background-image: url(images/icon-close.png);
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 510px 15px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    margin: 10px;
+    color: #0066;
+    transition: all 1s;
+}
+
+.pumkinlist-desc .list li:hover {
+    border: 3px solid salmon;
+    color: #FF9900;
+    font-weight: 700;
+    padding-left: 30PX;
+    background-image: url(images/icon-open.png);
+}
