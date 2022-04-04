@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'HoengseongHanu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/HoengseongHanu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'HoengseongHanu';
+    margin: 0;
+    padding: 0;
+    background-color: #ede8f6;
+    font-size: 15px;
+}
+
+/* reset */
+
+input:focus,
+input:active {
+    outline: none;
+    box-shadow: none;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    font: inherit;
+  }
+
+.survey-box {
+    width: 700px;
+    margin: 200px auto;
+    padding: 20px 0px;
+    border-radius: 20px;
+}
+
+/* header */
+
+.survey-header {
+    position: relative;
+    padding: 40px 20px 10px 20px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.survey-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.survey-header h1::before {
+    content: "";
+    background-color: #592fab;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.survey-header p {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* form */
+
+.section {
+    border: 1px solid #ddd;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section legend {
+    display: none;
+}
+
+.section h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.text.section label,
+.messenger.section label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.text.section label:last-child,
+.messenger.section label:last-child {
+    margin: 0;
+}
+
+.aspiration.section input,
+.to-me.section input {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.aspiration.section input {
+    width: 300px;
+}
+
+.to-me.section input {
+    width: 100%;
+}
+
+.date.section p,
+.time.section p {
+    font-size: 10px;
+    color: #929292;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    color: white;
+    padding: 10px;
+    background-color: #592fab;
+    border-radius: 5px;
+}
+
