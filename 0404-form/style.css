@@ -20,6 +20,11 @@ body {
 
 /* reset */
 
+input,
+select {
+    font-family: inherit;
+}
+
 input:focus,
 input:active {
     outline: none;
@@ -123,6 +128,20 @@ fieldset {
 
 .to-me.section input {
     width: 100%;
+}
+
+.question.section .dislike-q {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: url(images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.date.section input,
+.time.section input {
+    border: none;
 }
 
 .date.section p,
