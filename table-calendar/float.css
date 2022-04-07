@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'UhBeeSeulvely';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    bottom: 0;
+    font-family: 'UhBeeSeulvely';
+}
+
+p {
+    font-size: 16px;
+    font-family: 'UhBeeSeulvely';
+}
+
+.calender-section {
+    margin: 200px auto;
+    width: 800px;
+}
+
+/* header */
+
+.title {
+    position: relative;
+    background-image: url(image/bang_ham.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 150px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid salmon;
+}
+
+.year {
+    padding-left: 20px;
+    font-size: 40px;
+    text-align: start;
+}
+
+.lesson {
+    font-size: 20px;
+    color: lightcoral;
+    position:absolute;
+    right: 0;
+    top: 0;
+}
+
+/* main */
+
+
+tr th {
+    color: coral;
+    font-weight: 700;
+}
+
+tr td:nth-child(1) {
+    color: red;
+}
+
+tr td:nth-child(7) {
+    color: blue;
+}
+
+.calender {
+    margin: auto;
+}
+
+.jan {
+    float: left;
+}
+
+.feb {
+    float: right;
+}
+
+.jan, .feb {
+    margin-bottom: 30px;
+}
+
+.mar {
+    float: left;
+
+}
+
+.apr {
+    float: right;
+}
+
+/* 외각 마진 조정 */
+
+.jan, .mar {
+    margin-left: 80px;
+}
+
+.feb, .apr {
+    margin-right: 80px;
+}
