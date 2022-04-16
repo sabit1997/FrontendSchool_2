@@ -1,0 +1,54 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.favorite-lang {
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: start;
+    margin-bottom: 9px;
+}
+
+.lang-list {
+    width: 198px;
+    height: 208px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.list-item {
+    width: 184px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px 0 5px 0;
+}
+
+.list-item:hover {
+    background-color: #F8E4FF;
+}
