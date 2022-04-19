@@ -76,15 +76,29 @@ body {
     display: block;
 }
 
+.lang-list li {
+    margin: 5px 8px;
+}
+
+.lang-list li:nth-child(1) {
+    margin-top: 4px;
+}
+
+.lang-list li:last-child {
+    margin-bottom: 4px;
+}
+
+
 .list-item {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.17;
+    text-align: start;
     color: #000000;
     width: 184px;
+    background-color: #fff;
     padding: 7px 0 7px 10px;
     border-radius: 8px;
-    margin: 5px auto;
 }
 
 .list-item:hover {
