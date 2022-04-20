@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weniv login</title>
+    <link rel="stylesheet" href="style .css">
+</head>
+<body>
+    <article class="login-box">
+        <h1 class="logo"><img src="assets/weniv-logo.png" alt="weniv"></h1>
+        <p class="login-txt">위니브를 더 즐겁고 편리하게 이용하세요.</p>
+        <button class="login-button" id="box-login-button">로그인</button>
+    </article>
+    <article class="login-page">
+        <header class="login-page-title">
+            <h1 class="login-txt">로그인 또는 회원가입</h1>
+        </header>
+        <main class="main-page">
+            <h2 class="main-txt">위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+            <form class="form-login" action="get">
+                <input id="id" type="text" required placeholder="아이디">
+                <input id="pw" type="password" required placeholder="패스워드">
+                <input type="checkbox" id="inpHold" class="inp-hold txt-hide">
+                <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+                <button type="submit" class="login-button">로그인</button>
+            </form>
+            <p class="login-join">회원가입</p>
+            <p class="login-find">아이디/비밀번호찾기</p>
+            <div class="login-type">
+                <span class="or-text">또는</span>
+                <a class="fill-button google-login" onclick="opengooglePop()">
+                    구글 계정으로 로그인
+                </a>
+                <a class="fill-button facebook-login" onclick="openfacebookPop()">
+                    페이스북 계정으로 로그인
+                </a>
+                <a class="fill-button naver-login"  onclick="opennaverPop()">
+                    네이버 계정으로 로그인
+                </a>
+                <a class="fill-button kakaotalk-login" onclick="openkakaoPop()">
+                    카카오톡 계정으로 로그인
+                </a>
+            </div>
+            <img onclick="this.parentElement.parentElement.style.display='none'" class="close" src="./assets/close.png" alt="close">
+        </main>
+    </article>
+    <script src="app.js"></script>
+</body>
+</html>
