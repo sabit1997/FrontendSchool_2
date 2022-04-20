@@ -1,10 +1,10 @@
 // keep-button
 
-const keep = document.querySelector('.check-icon');
+// const keep = document.querySelector('.check-icon');
 
-keep.addEventListener('click', function () {
-  keep.classList.toggle('filled');
-});
+// keep.addEventListener('click', function () {
+//   keep.classList.toggle('filled');
+// });
 
 // login page
 
