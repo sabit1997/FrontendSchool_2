@@ -1,16 +1,9 @@
-const dropdownMenu = document.querySelector('.lang-list');
-const dropdownButton = document.querySelector('.favorite-lang');
+//  dropdown
 
-dropdownButton.addEventListener('click', function (event) {
-  if (this.active) {
-    dropdownMenu.classList.remove('active');
-    dropdownButton.classList.remove('active');
-  } else {
-    dropdownMenu.classList.add('active');
-    dropdownButton.classList.add('active');
-  }
+const selectBtn = document.querySelector(".favorite-lang");
+const selectMenu = document.querySelector(".lang-list");
 
-  this.active = !this.active;
+selectBtn.addEventListener("click", () => {
+  selectMenu.classList.toggle("active");
+  selectBtn.classList.toggle("active");
 });
-
-dropdownButton.active = false;
