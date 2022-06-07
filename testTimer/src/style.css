@@ -1,0 +1,113 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* { 
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right,#F0F4FF, #A5B6EE);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo .weniv-img {
+    width: 244px;
+    margin-top: 72px;
+    margin-bottom: 60px;
+}
+
+main {
+    width: 400px;
+    background: linear-gradient(to bottom right, #5572BB, #374B7C);
+    border-radius: 16px;
+    box-shadow: 20px 20px 60px 10px #374B7C66;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    font-size: 0;
+}
+
+main .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin: 48px 0 75px;
+    color: #fff;
+}
+
+main .title::after {
+    content: "";
+    width: 312px;
+    height: 1px;
+    background-color: #3D538A;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+main .time {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.time .time-items {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.4px;
+    color: #A5B6EE;
+    margin-bottom: 4px;
+}
+
+.time .num {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #354971;
+    border-radius: 4px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom right,#4C65A0, #304577);
+    position: relative;
+}
+
+.time li+li {
+    margin-left: 22px;
+}
+
+main .fill-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    color: #617199;
+    height: 48px;
+    padding: 0 23px 0 44px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 0px #0000000D inset;
+    background-color: #324577;
+    margin-bottom: 40px;
+    background-image: url(./img/icon-start-disabled.png);
+    background-repeat: no-repeat;
+    background-position: 21.5px center;
+}
+
+main .start-button {
+    margin-right: 12px;
+}
+
+main .reset-button {
+    background-image: url(./img/icon-reset-disabled.png);
+}
+
+footer .copyright {
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 16.8px;
+    color: #8596BF;
+    font-style: normal;
+}
